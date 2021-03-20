@@ -1,0 +1,409 @@
+/* Color Bank:
+#516360
+#6d9387
+#cedbd8
+#edd8ca
+#d3c6b7 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+label {
+    width: 90%;
+    padding-left: 2rem;
+}
+
+.margin-collapse {
+    margin: -1px;
+}
+
+.margin-auto {
+    margin: 0 auto;
+}
+
+#login-page-background {
+    background-image: url('/images/logo-image-min.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right center;
+    background-size: 50%;
+}
+
+.page-text {
+    color: #516360;
+    width: 75%;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+.main {
+    background-color:rgb(192, 191, 191);
+    padding: 35px 0 0 0;
+    height: 780px;
+}
+
+.input-1 {
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+}
+
+.input-2 {
+    background-color: white;
+    border-radius:0 0 5px 5px;
+}
+
+.student-input {
+    background-color: white;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.goal-input {
+    background-color: white;
+    border-radius: 5px 5px 5px 5px;
+}
+
+
+
+header {
+    color: #516360;
+    background-color: #516360;
+}
+
+nav {
+    background-color: #cedbd8;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2em;
+}
+
+nav a {
+    margin: 0 2em;
+}
+
+body {
+    background-color: #edd8ca;
+}
+
+h1 {
+    margin: 0;
+    padding-bottom: .1em;
+}
+
+.logo {
+    font-size: 5rem;
+    /* font-family: "Amatic SC"; */
+    font-weight: bold;
+    /* padding-left: 1.5rem; */
+    border-top: solid 1px #516360;
+    margin-top: -1px;
+    /* margin-bottom: 1rem; */
+    background-image: linear-gradient(to bottom right, #CDB153, white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+h2 {
+    color: #516360;
+    margin: 0;
+}
+h3 {
+    
+    color: #516360;
+    font-weight: 300;
+    padding: .5rem;
+    margin: 0;
+    line-height: normal;
+}
+h4 {
+    color: #516360;
+    font-weight: 300;
+    text-align: center;
+}
+h5 {
+    padding-bottom: .5rem;
+    margin-top: 0cm;
+    color:  #516360;
+}
+
+.student-goal-title {
+    color: #cedbd8;
+}
+
+.btn {
+    background-color: #6d9387; 
+    border: none;
+    color: #cedbd8;
+    text-decoration: none;
+} 
+
+button {
+    margin: 16px;
+}
+.sticky-footer {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px -4px 3px rgba(35, 16, 16, 0.5);
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: #516360;
+    padding: 1em;
+    margin-bottom: -2px;
+}
+
+.with-footer {
+    margin-bottom: 5rem;
+}
+
+ul {
+    column-count: 3;
+    padding: 2em;
+    
+}
+
+ol {
+    background-color: #cedbd8;
+    padding: 2em;
+}
+
+li {
+    color:  #516360;
+}
+
+
+/* MODAL STYLING */
+.modal-input{
+    padding: 0 3em;
+}
+.modal-input label {
+    padding-left: 3em;
+}
+.button-style {
+    padding: 70px 0 0px 0;
+}
+
+.goal-bank-container {
+    width: 85%;
+    margin: 0 auto,
+}
+
+/* All Goals View */
+.all-goals-container {
+    padding: 2rem;
+}
+.footer-goal {
+    padding: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    border: #516360 solid;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    box-shadow: 0px -4px 3px rgba(35, 16, 16, 0.5);
+}
+.all-goals-container {
+    padding: 2rem;
+}
+
+/* Single-Student */
+.sing-student-container {
+    width: 100%;
+}
+table {
+    background-color: #cedbd8;
+}
+th, td {
+    padding-left: 2em;
+}
+
+.footer-sing-student {
+    padding: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    border: #516360 solid;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    box-shadow: 0px -4px 3px rgba(35, 16, 16, 0.5);
+}
+
+
+.goal-card {
+    background-color:  #516360;
+    height: 23em;
+    overflow-y: scroll;
+
+}
+
+.student-goals-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.row .col {
+    padding: 0;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.table-header {
+    color: #cedbd8;
+    background-color: #516360;
+    width: 100%;    
+    height: 9em;
+}
+
+.table-info {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.goal-info-container {
+    padding: .5em 1em 1em 2em;
+    width: 70%;
+    overflow: hidden;
+}
+
+.trial-submit-wrapper {
+    padding: 3em 0;
+}
+
+.add-trial-container {
+    padding-top: .75em;
+    width: 30%;
+    margin: 0, auto;
+}
+
+.stack-top{
+    z-index: 9999;
+}
+
+.table-height {
+    max-height: 14em;
+    overflow-y: scroll;
+}
+
+a {
+    color: #516360;
+}
+
+.goal-form-container {
+    margin-top: 5em;
+    padding-left: 3em;
+    width: 75%;
+}
+
+#goal-form {
+    padding-top: 1em;
+}
+
+/* Trial Submission Form */
+
+.container-form {
+    margin: 2em 0;
+    width: 50%;
+    
+}
+
+.student-form-container {
+    padding: 2em 0;
+}
+
+.student-id-trial {
+    justify-content: flex-start;
+    color: #516360;
+    padding-bottom: 3em;
+}
+.student-name-header {
+    background-color: #516360;
+    color: #d3c6b7;
+    margin-top: 0cm;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+}
+.row {
+    margin-right: 0cm;
+    margin-bottom: 0cm;
+    margin-top: 0cm;
+}
+
+.input-header {
+    width: 100%;
+    color: #d3c6b7;
+    background-color: #516360;
+    margin-top: 0;
+    padding: 1rem;
+}
+.login-header {
+    padding: .3em;
+}
+
+.input-field {
+    width: 90%; 
+    text-align: left;
+    background-color: #cedbd8;
+    padding-left: 2rem;
+}
+form { 
+    justify-content: flex-start;
+    background-color: #cedbd8;
+    margin-right: 0%;
+}
+
+button {
+    margin: 16px;
+}
+.modal-input{
+    padding: 0 3em;
+}
+.modal-input label {
+    padding-left: 3em;
+}
+
+.button-style {
+    padding: 70px 0 0px 0;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(142, 155, 142);
+    margin: 0px 0 0px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 3em;
+    }
+    .goal-card {
+        min-width: 90%;
+        overflow-x: scroll;
+    }
+    .goal-info-container {
+        padding-left: .75em;
+        width: 80%;
+    }
+    .add-trial-container {
+        width: 20%;
+    }
+    .goal-bank-container{
+        width: 90%;
+    }
+  }

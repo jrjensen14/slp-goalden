@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SLP Goalden App" />
+    <meta name="title" property="og:title" content="SLP Goalden" />
+    <meta property="og:type" content="Website" />
+    <meta name="image" property="og:image"
+        content="https://live.staticflickr.com/65535/50916581581_2ae8e6f833_z.jpg" />
+    <meta name="description" property="og:description" content="SLP Goalden is a full-stack app designed to help speech language pathologists track student speech goals and progress. Notable technologies include: node, Express, MySQL, Sequelize and Materialize." />
+    <meta name="author"
+        content="Craig Bennett, Adam Crandall, Ethan Dodgen, Jessica Jensen, Lydia Kennedy, Sylvester Nwizu" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/materialize.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
+    <title>SLP Goalden</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1 class="center-align logo">SLP Goalden</h1>
+            {{#if loggedIn}}
+            <nav>
+                <div>
+                    <h2 id="username" data-userID="{{userId}}">{{username}}</h2>
+                </div>
+                <div>
+                    <a href="/students" class="btn waves-effect waves-light">Your Students</a>
+                    <a class="waves-effect waves-light btn" href="/goals">Your Goals</a>
+                    <a href="" id="logout" class="btn waves-effect waves-light">Log Out</a>
+                </div>
+            </nav>
+            {{/if}}
+        </header>
+        {{#unless loggedIn}}
+        <div>
+            <p class="page-text">SLP Goalden is a web application that helps you conveniently store student goals and
+                trial data. Log in
+                or sign-up to get started.</p>
+        </div>
+        {{/unless}}
+        <main>
+            {{{ body }}}
+        </main>
+        {{!-- <footer>
+            <p>SLP Goalden &copy; 2021</p>
+        </footer> --}}
+    </div>
+
+    {{#if loggedIn}}
+    <script src="/javascript/logout.js"></script>
+    {{/if}}
+    <script src="/javascript/materialize.min.js" defer ></script>
+</body>
+
+</html>

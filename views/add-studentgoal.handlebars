@@ -1,0 +1,15 @@
+<div>
+    
+    <p class="page-text center-align">Add a goal to <span>{{studentName}}</span></p>
+    <div class="row goal-bank-container">
+       
+        {{#each userGoals as |goal|}}
+            
+            <button class="btn waves-effect waves-light goal-btn col s2" type="submit" name="action" data-goalID="{{goal.id}}">{{goal.name}}</button>
+            
+        {{/each}}
+        
+    </div>
+</div>
+
+<script src="/javascript/add-studentgoal.js"></script>

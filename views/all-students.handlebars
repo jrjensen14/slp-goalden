@@ -1,0 +1,54 @@
+<div class="with-footer">
+ 
+  <div class="list-container">
+  <table class="striped" style="border: 3px #516360 solid;">
+      <thead>
+        <tr>
+          <th><h5 style="font-weight: bold;">Student Name</h5></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        {{#each students as |student|}}
+  
+     <tr>
+       <td>
+      <a  href="/students/student/{{student.id}}">
+        <h5>
+          {{student.last_name}}{{#if student.first_name}}, {{student.first_name}}{{/if}}
+        </h5>
+      </a>
+      </td>
+      </tr>
+    {{/each}}
+      </tbody>
+    </table>
+    
+
+  </div>
+</div>
+ <footer class="new-post-footer sticky-footer">
+        <a class="waves-effect waves-light btn modal-trigger" href="#add-student-modal">Student
+        <i class="material-icons left">add_circle_outline</i>
+        </a>
+    </footer>
+
+
+<!-- Modal Structure -->
+<div id="add-student-modal" class="modal">
+  <div class="modal-content">
+    <h4>How many students would you like to add?</h4>
+    <p>Please enter a number between 1-30</p>
+  </div>
+  <div class="input-field modal-input">
+    <label for="stud-number">Number of students</label>
+    <input type="number" name="stud-number" id="stud-number">
+  </div>
+  <div class="modal-input">
+    <button class="btn waves-effect waves-light" id="number-confirm">Accept
+      <i class="material-icons right">send</i>
+    </button>
+  </div>
+</div>
+
+<script src="/javascript/all-students.js"></script>

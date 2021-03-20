@@ -1,0 +1,52 @@
+<div class="all-goals-container">
+  <div>
+
+    
+    <table class="striped" style="border: 3px #516360 solid;">
+      <thead>
+        <tr>
+          <th>Goal</th>
+          <th>Goal Description</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        {{#each userGoals as |goal|}}
+        <tr>
+          <td>{{goal.name}}</td>
+          <td>{{goal.description}}</td>
+         
+        </tr> 
+        {{/each}}
+      </tbody>
+    </table>
+    
+  </div>
+</div>
+<footer class="new-post-footer sticky-footer stack-top">
+  <a class="waves-effect waves-light btn" href="/goals/submit">New Goal
+    <i class="material-icons left">add_circle_outline</i>
+  </a>
+</footer>
+
+
+{{!--
+<!-- Modal Structure -->
+<div id="add-goal-modal" class="modal">
+  <div class="modal-content">
+    <h4>Goal</h4>
+    <p>Enter the Name of the Goal</p>
+  </div>
+  <div class="input-field modal-input">
+    <label for="add-goal-">Goal</label>
+    <input type="text" name="add-goal" id="add-goal">
+  </div>
+  <div class="modal-input">
+    <button class="btn waves-effect waves-light" id="number-confirm">
+      Accept
+    </button>
+  </div>
+</div> --}}
+
+{{!--
+<script src="/public/javascript/all-goal-view.js"></script> --}}
